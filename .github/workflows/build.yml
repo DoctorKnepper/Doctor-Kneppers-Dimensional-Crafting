@@ -17,11 +17,9 @@ jobs:
 
       - uses: gradle/actions/setup-gradle@v4
 
+      # `build` also runs the game tests (src/gametest).
       - name: Build
         run: ./gradlew build
-
-      - name: Run game tests
-        run: ./gradlew runGameTest
 
       - uses: actions/upload-artifact@v4
         with:

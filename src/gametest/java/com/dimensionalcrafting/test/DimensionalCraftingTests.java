@@ -46,11 +46,16 @@ public class DimensionalCraftingTests {
 		return new DimensionalCraftingMenu(1, player.getInventory(), ContainerLevelAccess.create(helper.getLevel(), tablePos));
 	}
 
-	/** Places a chest owned by {@code owner} directly in {@code level}, far outside the test area. */
+	/**
+	 * Places an empty chest owned by {@code owner} directly in {@code level}. The test world is kept
+	 * between runs, so the chest is cleared in case an earlier run left one with items at this spot.
+	 */
 	private static Container ownedChest(final ServerLevel level, final BlockPos pos, final UUID owner) {
 		level.setBlockAndUpdate(pos, Blocks.CHEST.defaultBlockState());
 		OwnedContainers.get(level.getServer()).setOwner(GlobalPos.of(level.dimension(), pos), owner);
-		return (Container)level.getBlockEntity(pos);
+		Container chest = (Container)level.getBlockEntity(pos);
+		chest.clearContent();
+		return chest;
 	}
 
 	private static void finish(final GameTestHelper helper, final ServerPlayer player) {
@@ -103,7 +108,8 @@ public class DimensionalCraftingTests {
 		helper.assertTrue(nether != null, "test server has no nether");
 
 		BlockPos farPos = helper.absolutePos(TABLE).offset(30_000, 0, 30_000);
-		BlockPos netherPos = new BlockPos(200, 64, -200);
+		// Derived from the test's own position, which changes every run, so runs never share this chest.
+		BlockPos netherPos = new BlockPos(helper.absolutePos(TABLE).getX() / 8, 64, helper.absolutePos(TABLE).getZ() / 8);
 		ownedChest(overworld, farPos, player.getUUID()).setItem(0, new ItemStack(Items.OAK_PLANKS, 3));
 		ownedChest(nether, netherPos, player.getUUID()).setItem(5, new ItemStack(Items.STICK, 2));
 
