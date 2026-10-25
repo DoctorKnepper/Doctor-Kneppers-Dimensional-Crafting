@@ -1,0 +1,9 @@
+{
+  "block.dimensionalcrafting.dimensional_crafting_table": "Dimensional Crafting Table",
+  "block.dimensionalcrafting.dimensional_crafting_table.tooltip": "Crafts with items from all of your chests, anywhere",
+  "block.dimensionalcrafting.dimensional_crafting_table.tooltip.owned": "Chests and barrels you place or open become yours",
+  "container.dimensionalcrafting.dimensional_crafting": "Dimensional Crafting",
+  "message.dimensionalcrafting.dimensional_crafting.linked_none": "No chests linked yet: chests and barrels you place or open become yours",
+  "message.dimensionalcrafting.dimensional_crafting.linked_one": "Linked to your ender chest and 1 chest",
+  "message.dimensionalcrafting.dimensional_crafting.linked_many": "Linked to your ender chest and %s chests"
+}

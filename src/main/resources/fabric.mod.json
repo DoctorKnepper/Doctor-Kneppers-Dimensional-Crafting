@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "dimensionalcrafting",
+	"version": "${version}",
+	"name": "Dimensional Crafting Table",
+	"description": "A crafting table that can use the items in every chest and barrel you own, anywhere in the world and in any dimension, plus your ender chest.",
+	"authors": [
+		"DoctorKnepper"
+	],
+	"contact": {
+		"homepage": "https://github.com/DoctorKnepper/MC-Dimensional-Crafting",
+		"sources": "https://github.com/DoctorKnepper/MC-Dimensional-Crafting",
+		"issues": "https://github.com/DoctorKnepper/MC-Dimensional-Crafting/issues"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/dimensionalcrafting/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.dimensionalcrafting.DimensionalCrafting"
+		],
+		"client": [
+			"com.dimensionalcrafting.client.DimensionalCraftingClient"
+		]
+	},
+	"mixins": [
+		"dimensionalcrafting.mixins.json",
+		{
+			"config": "dimensionalcrafting.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

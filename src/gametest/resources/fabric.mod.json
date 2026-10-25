@@ -1,0 +1,21 @@
+{
+	"schemaVersion": 1,
+	"id": "dimensionalcrafting-gametest",
+	"version": "1.0.0",
+	"name": "Dimensional Crafting Table Game Tests",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-gametest": [
+			"com.dimensionalcrafting.test.DimensionalCraftingTests"
+		],
+		"fabric-client-gametest": [
+			"com.dimensionalcrafting.test.DimensionalCraftingClientTest"
+		]
+	},
+	"depends": {
+		"dimensionalcrafting": "*"
+	},
+	"mixins": [
+		"dimensionalcrafting-gametest.mixins.json"
+	]
+}
