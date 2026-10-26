@@ -1,4 +1,4 @@
-# Dimensional Crafting Table
+# Doctor Knepper's Dimensional Crafting Table
 
 A crafting table that can use the items in **every chest and barrel you own**, anywhere in the world and in any dimension, plus your ender chest.
 

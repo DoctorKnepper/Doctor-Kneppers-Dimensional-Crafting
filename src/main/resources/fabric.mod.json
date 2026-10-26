@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "dimensionalcrafting",
 	"version": "${version}",
-	"name": "Dimensional Crafting Table",
+	"name": "Doctor Knepper's Dimensional Crafting Table",
 	"description": "A crafting table that can use the items in every chest and barrel you own, anywhere in the world and in any dimension, plus your ender chest.",
 	"authors": [
 		"DoctorKnepper"

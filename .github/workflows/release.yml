@@ -32,7 +32,7 @@ jobs:
           modrinth-id: ${{ vars.MODRINTH_ID }}
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           files: build/libs/!(*-@(dev|sources|javadoc)).jar
-          name: Dimensional Crafting Table ${{ github.event.release.tag_name }}
+          name: Doctor Knepper's Dimensional Crafting Table ${{ github.event.release.tag_name }}
           loaders: fabric
           game-versions: 26.3
           java: 25
@@ -46,7 +46,7 @@ jobs:
           curseforge-id: ${{ vars.CURSEFORGE_ID }}
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           files: build/libs/!(*-@(dev|sources|javadoc)).jar
-          name: Dimensional Crafting Table ${{ github.event.release.tag_name }}
+          name: Doctor Knepper's Dimensional Crafting Table ${{ github.event.release.tag_name }}
           loaders: fabric
           game-versions: 26.3
           java: 25
@@ -58,7 +58,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           files: build/libs/!(*-@(dev|sources|javadoc)).jar
-          name: Dimensional Crafting Table ${{ github.event.release.tag_name }}
+          name: Doctor Knepper's Dimensional Crafting Table ${{ github.event.release.tag_name }}
           loaders: fabric
           game-versions: 26.3
           java: 25
