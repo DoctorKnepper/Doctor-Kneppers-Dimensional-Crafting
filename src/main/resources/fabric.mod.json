@@ -8,9 +8,9 @@
 		"DoctorKnepper"
 	],
 	"contact": {
-		"homepage": "https://github.com/DoctorKnepper/MC-Dimensional-Crafting",
-		"sources": "https://github.com/DoctorKnepper/MC-Dimensional-Crafting",
-		"issues": "https://github.com/DoctorKnepper/MC-Dimensional-Crafting/issues"
+		"homepage": "https://github.com/DoctorKnepper/Doctor-Kneppers-Dimensional-Crafting",
+		"sources": "https://github.com/DoctorKnepper/Doctor-Kneppers-Dimensional-Crafting",
+		"issues": "https://github.com/DoctorKnepper/Doctor-Kneppers-Dimensional-Crafting/issues"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/dimensionalcrafting/icon.png",

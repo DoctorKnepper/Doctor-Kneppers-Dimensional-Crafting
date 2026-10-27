@@ -42,7 +42,7 @@ Install it on both the client and the server.
 
 ## Installing
 
-Download `dimensional-crafting-<version>.jar` from the [releases page](https://github.com/DoctorKnepper/MC-Dimensional-Crafting/releases), Modrinth or CurseForge, and put it in your `mods` folder along with Fabric API.
+Download `dimensional-crafting-<version>.jar` from the [releases page](https://github.com/DoctorKnepper/Doctor-Kneppers-Dimensional-Crafting/releases), Modrinth or CurseForge, and put it in your `mods` folder along with Fabric API.
 
 ## Building from source
 
